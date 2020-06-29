@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Document</title>
+   <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+   <div class="wrapper">
+      <div id="information">
+         <h1>Общая информация</h1>
+
+         <div class="prop-notebook">
+            <div class="text-details">
+               <div class="prop-brand">Бренд</div>
+               <div class="prop-year">Год выпуска</div>
+               <div class="prop-processor">Процессор</div>
+               <div class="prop-core">Количество ядер</div>
+               <div class="prop-ram">Размер ОЗУ</div>
+               <div class="prop-hardDrive">Тип ностителя</div>
+               <div class="prop-weigth">Вес</div>
+            </div>
+            <div class="action"></div>
+         </div>
+         <form>
+
+         </form>
+
+      </div>
+
+      <div id="all_info">
+         <h2>Подробная информация</h2>
+         <form>
+
+         </form>
+      </div>
+
+      <div id="create_note" class="create_note">
+         <h2>Создание ноутбука</h2>
+         <form>
+            <div class="radio-box-type">
+               <div><input type="radio" id="radioLaptop" name="radio" value="laptop" class="radio">Laptop</div>
+               <div><input type="radio" id="radioUltra" name="radio" value="ultra" class="radio">Ultrabook</div>
+            </div>
+            <div class="input-box">
+               <label for="brand">Бренд</label>
+               <input type="text" name="brand" id="brand" value="Asus" required>
+            </div>
+            <div class="input-box">
+               <label for="year">Год выпуска</label>
+               <input type="number" name="year" id="year" value="2020">
+            </div>
+            <div class="input-box">
+               <label for="processor">Процессор</label>
+               <input type="text" name="processor" id="processor" value="Intel">
+            </div>
+            <div class="input-box">
+               <label for="core">Количество ядер</label>
+               <input type="number" name="core" id="core" value="8">
+            </div>
+            <div class="input-box">
+               <label for="ram">Количество ОЗУ</label>
+               <input type="number" name="ram" id="ram" value="8">
+            </div>
+            <div class="input-box">
+               <label for="hardDrive">Тип носителя</label>
+               <select name="hardDrive" id="hardDrive">
+                  <option value="ssd">SSD</option>
+                  <option value="hdd">HDD</option>
+               </select>
+            </div>
+            <div class="input-box">
+               <label for="touchBar">Наличие TouchBar</label>
+               <select name="touchBar" id="touchBar">
+                  <option value="yes">есть</option>
+                  <option value="no">нет</option>
+               </select>
+
+            </div>
+            <div class="input-box">
+               <label for="gpu">GPU</label>
+               <select name="gpu" id="gpu">
+                  <option value="nvidia">Nvidia</option>
+                  <option value="amd">Amd</option>
+               </select>
+            </div>
+            <div class="input-box">
+               <label for="screeenSize">Размер экрана</label>
+               <select name="screeenSize" id="screeenSize">
+                  <option value="13">13"</option>
+                  <option value="15">15"</option>
+               </select>
+            </div>
+            <div class="input-box">
+               <label for="open">Открытие одной рукой</label>
+               <select name="open" id="open">
+                  <option value="yes">Да</option>
+                  <option value="no">Нет"</option>
+               </select>
+            </div>
+            <div class="input-box">
+               <label for="weight">Вес</label>
+               <input type="number" name="weight" id="weight" placeholder="в граммах">
+            </div>
+            <input type="button" id="createNotebook" class="buttons" value="Добавить ноутбук">
+            <input type="button" id="mainMenu" class="buttons" value="Главная страница">
+         </form>
+      </div>
+   </div>
+
+   <script src="./script.js"></script>
+</body>
+
+</html>

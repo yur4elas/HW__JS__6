@@ -1,0 +1,84 @@
+* {
+   box-sizing: border-box;
+   margin: 0;
+   padding: 0;
+   outline: none;
+}
+.wrapper {
+   max-width: 1440px;
+   width: 90%;
+   margin: 0 auto;
+}
+.all_info {
+}
+.information {
+}
+.create_note {
+   padding: 40px;
+   width: 60%;
+   margin: 0 auto;
+}
+
+.prop-notebook,
+.text-details {
+   width: 100%;
+   display: flex;
+   justify-content: space-between;
+   text-align: center;
+   border: 1px solid #000;
+   margin-bottom: 1px;
+   padding: 5px 20px;
+}
+.prop-brand,
+.prop-year,
+.prop-processor,
+.prop-core,
+.prop-ram,
+.prop-hardDrive,
+.prop-weigth {
+   width: 12%;
+}
+
+.action {
+   width: 10%;
+}
+.radio {
+}
+.input-box {
+   display: flex;
+   justify-content: space-between;
+   margin-bottom: 20px;
+}
+.input-box label {
+   font-size: 18px;
+   font-weight: bold;
+}
+.input-box input {
+   padding: 5px;
+}
+.input-box:last-child {
+   justify-content: center;
+   margin-bottom: 0;
+}
+#name-gpu {
+   display: none;
+}
+
+.prop-default{
+   width: 40%;
+   text-align: center;
+   
+}
+.prop-info{
+   width: 80%;
+   display: flex;
+   flex-direction: column;     
+}
+
+.sub-prop{
+   border: 1px solid #000;
+   display: flex;
+   justify-content: space-between;
+   margin-bottom: 5px;
+   padding: 5px 10px;
+}
